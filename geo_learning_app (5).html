@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoFun</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+
+    body {
+      font-family: 'Fredoka', sans-serif;
+      background: linear-gradient(to bottom right, #d1ecf1, #f8f9fa);
+      color: #333;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    h1 {
+      color: #0d47a1;
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .menu button {
+      background-color: #0d47a1;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .menu button:hover {
+      background-color: #1565c0;
+    }
+    .section {
+      display: none;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .section.active {
+      display: block;
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+    }
+    .cartoon {
+      max-width: 200px;
+      margin: 20px auto;
+      display: block;
+    }
+    .form-control {
+      margin: 10px 0;
+    }
+    .form-control label {
+      display: block;
+      font-weight: bold;
+    }
+    .form-control input, .form-control select {
+      padding: 8px;
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .fun-pic {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 10px auto;
+      border-radius: 10px;
+    }
+    .icon-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .icon-item {
+      text-align: center;
+      max-width: 120px;
+      transition: transform 0.3s;
+    }
+    .icon-item:hover {
+      transform: scale(1.1);
+    }
+    .icon-item img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .icon-item span {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+    .trial-banner {
+      background-color: #e0f7fa;
+      color: #00796b;
+      text-align: center;
+      padding: 10px;
+      border-radius: 12px;
+      margin: 15px auto;
+      font-weight: bold;
+      max-width: 400px;
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <h1>🌍 GeoFun</h1>
+  <div class="trial-banner">Enjoy a 7-Day Free Trial of GeoFun Premium! 🎉</div>
+  <img class="cartoon" src="https://cdn.pixabay.com/photo/2021/01/25/09/34/globe-5948392_1280.png" alt="Cartoon Globe">
+
+  <div class="icon-list">
+    <div class="icon-item">
+      <img src="https://cdn.pixabay.com/photo/2022/03/17/03/40/map-7072458_1280.jpg" alt="Maps">
+      <span>Maps</span>
+    </div>
+    <div class="icon-item">
+      <img src="https://cdn.pixabay.com/photo/2020/02/10/20/21/flashcards-4835451_1280.png" alt="Flash Cards">
+      <span>Flash Cards</span>
+    </div>
+    <div class="icon-item">
+      <img src="https://cdn.pixabay.com/photo/2022/04/06/11/40/earth-7113662_1280.jpg" alt="Globe">
+      <span>Globe</span>
+    </div>
+    <div class="icon-item">
+      <img src="https://cdn.pixabay.com/photo/2012/04/26/11/50/question-42931_1280.png" alt="Quiz">
+      <span>Quiz</span>
+    </div>
+    <div class="icon-item">
+      <img src="https://cdn.pixabay.com/photo/2018/03/27/22/17/artificial-intelligence-3262753_1280.jpg" alt="AI Learning">
+      <span>AI Learning</span>
+    </div>
+  </div>
+
+  <img class="fun-pic" src="https://cdn.pixabay.com/photo/2023/04/21/14/20/globe-7940339_1280.jpg" alt="Homepage Globe With Design">
+
+  <div class="footer">
+    © 2025 GeoFun | Made by Hardik Agarwal | Premium ₹50 | 7-Day Free Trial Available | All rights reserved.
+  </div>
+</body>
+</html>
